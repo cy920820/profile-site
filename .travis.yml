@@ -1,0 +1,21 @@
+# 设置编程语言
+language: node_js
+# 指定 NodeJs 版本，也可直接设为 stable
+node_js: stable
+# 缓存依赖
+cache:
+  directories:
+    - node_modules
+# 设置需要监听的分支
+branches:
+  only:
+    - main
+install:
+  - npm install -g yarn
+  - yarn install
+# 需要执行的脚本
+script:
+  - yarn build
+after_success:
+  - rm -rf root@82.157.146.59:/data/www/profile-site/*
+  - scp -o stricthostkeychecking=no -r ./dist/* root@82.157.146.59:/data/www/profile-site/*
