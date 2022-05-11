@@ -1,0 +1,27 @@
+{
+  "name": "profile-site",
+  "version": "1.0.0",
+  "description": "My Profile Site",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cy920820/profile-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cy920820/profile-site/issues"
+  },
+  "homepage": "https://github.com/cy920820/profile-site#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-html-minifier-terser": "^6.0.1"
+  }
+}
